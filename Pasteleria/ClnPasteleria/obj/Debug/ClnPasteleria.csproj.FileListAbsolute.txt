@@ -1,0 +1,15 @@
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.dll.config
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.dll
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.pdb
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.dll
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.dll
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.SqlServer.dll
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.pdb
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.dll.config
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.xml
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.SqlServer.xml
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.csproj.AssemblyReference.cache
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.csproj.CoreCompileInputs.cache
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPaste.7A27D093.Up2Date
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.dll
+E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.pdb
