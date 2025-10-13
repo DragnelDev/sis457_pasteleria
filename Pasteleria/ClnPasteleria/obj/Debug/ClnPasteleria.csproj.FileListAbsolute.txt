@@ -13,3 +13,18 @@ E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\D
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPaste.7A27D093.Up2Date
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.dll
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.dll.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\ClnPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\CadPasteleria.dll.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.csproj.AssemblyReference.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.csproj.CoreCompileInputs.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPaste.7A27D093.Up2Date
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\ClnPasteleria\obj\Debug\ClnPasteleria.pdb

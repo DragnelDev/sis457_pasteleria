@@ -34,12 +34,12 @@ El modelo de datos se basa en las siguientes entidades clave:
 
 | Entidad | Propósito | Campos Clave (CRUD) | Eliminación Lógica | Observaciones |
 | :--- | :--- | :--- | :--- | :--- |
-| **Usuario** | Autenticación y Login al sistema. | `IdUsuario`, `Usuario`, `Clave`, `Rol` | **Sí** (`Estado`) | |
-| **Producto** | Catálogo de pastelería disponible para la venta. | `IdProducto`, `Nombre`, `PrecioUnitario`, `TipoProducto`, `Descripcion` | **Sí** (`Estado`) | |
-| **Cliente** | Contactos para la gestión de pedidos. | `IdCliente`, `NombreCompleto`, `Telefono`, `Email`, `Direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
-| **Proveedor** | Entidades que suministran materia prima. | `IdProveedor`, `Nombre`, `Telefono`, `Email`, `Direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
-| **Pedido** | Cabecera de la transacción de venta. | `IdPedido`, `FechaEntrega`, `Total`, `IdCliente`, `IdUsuario` | **No** | Registro Histórico. |
-| **DetallePedido** | Detalle de los productos incluidos en cada pedido. | `IdDetallePedido`, `IdPedido`, `IdProducto`, `Cantidad` | **No** | Detalle de Registro. |
+| **Usuario** | Autenticación y Login al sistema. | `idUsuario`, `nombreUsuario`, `clave`, `rol` | **Sí** (`Estado`) | |
+| **Producto** | Catálogo de pastelería disponible para la venta. | `idProducto`, `nombre`, `precioUnitario`, `tipoProducto`, `descripcion` | **Sí** (`Estado`) | |
+| **Cliente** | Contactos para la gestión de pedidos. | `idCliente`, `nombreCompleto`, `telefono`, `email`, `direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
+| **Proveedor** | Entidades que suministran materia prima. | `idProveedor`, `nombre`, `telefono`, `email`, `direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
+| **Pedido** | Cabecera de la transacción de venta. | `idPedido`, `fechaEntrega`, `total`, `idCliente`, `idUsuario` | **No** | Registro Histórico. |
+| **DetallePedido** | Detalle de los productos incluidos en cada pedido. | `idDetallePedido`, `idPedido`, `idProducto`, `cantidad` | **No** | Detalle de Registro. |
 
 ---
 

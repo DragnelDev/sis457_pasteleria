@@ -20,3 +20,25 @@ E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\CpPasteleria\bin\De
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\EntityFramework.SqlServer.xml
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.exe.config
 E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPastel.506ADEA3.Up2Date
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CpPasteleria.exe.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CpPasteleria.exe
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CpPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CadPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\ClnPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\EntityFramework.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CadPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\CadPasteleria.dll.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\ClnPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\ClnPasteleria.dll.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\EntityFramework.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.csproj.AssemblyReference.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.exe.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.Form1.resources
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.Properties.Resources.resources
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.csproj.GenerateResource.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.csproj.CoreCompileInputs.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPastel.506ADEA3.Up2Date
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.exe
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.pdb

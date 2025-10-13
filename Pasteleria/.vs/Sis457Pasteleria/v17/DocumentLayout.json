@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Pasteleria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D9984CD-B9A7-4AB7-A692-4AFE2F4138AE}|CadPasteleria\\CadPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\pasteleria\\cadpasteleria\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8D9984CD-B9A7-4AB7-A692-4AFE2F4138AE}|CadPasteleria\\CadPasteleria.csproj|solutionrelative:cadpasteleria\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Modelo.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Pasteleria\\CadPasteleria\\Modelo.edmx",
+              "RelativeDocumentMoniker": "CadPasteleria\\Modelo.edmx",
+              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Pasteleria\\CadPasteleria\\Modelo.edmx [Diagram1]",
+              "RelativeToolTip": "CadPasteleria\\Modelo.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-10-13T01:49:11.628Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
