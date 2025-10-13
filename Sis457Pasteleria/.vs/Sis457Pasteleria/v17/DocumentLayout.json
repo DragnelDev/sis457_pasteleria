@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD:Pasteleria/.vs/Sis457Pasteleria/v17/DocumentLayout.json
   "WorkspaceRootPath": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Pasteleria\\",
   "Documents": [
     {
@@ -7,10 +8,15 @@
       "RelativeMoniker": "D:0:0:{8D9984CD-B9A7-4AB7-A692-4AFE2F4138AE}|CadPasteleria\\CadPasteleria.csproj|solutionrelative:cadpasteleria\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
+=======
+  "WorkspaceRootPath": "E:\\Pasteleria-Proyecto-SIS457_2\\sis457_pasteleria\\Sis457Pasteleria\\",
+  "Documents": [],
+>>>>>>> 8560872eaf5e44091f3f0601e6a08eb91f0cf98a:Sis457Pasteleria/.vs/Sis457Pasteleria/v17/DocumentLayout.json
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD:Pasteleria/.vs/Sis457Pasteleria/v17/DocumentLayout.json
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -31,6 +37,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> 8560872eaf5e44091f3f0601e6a08eb91f0cf98a:Sis457Pasteleria/.vs/Sis457Pasteleria/v17/DocumentLayout.json
     }
   ]
 }
