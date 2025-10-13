@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'E:\Pasteleria-Proyecto-SIS457_2\sis457_pasteleria\Pasteleria\CadPasteleria\Modelo.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\Modelo.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

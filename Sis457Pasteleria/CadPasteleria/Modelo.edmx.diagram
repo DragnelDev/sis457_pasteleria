@@ -4,17 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="80bbed3b327846fcb9e8aff774241792" Name="Diagram1" ZoomLevel="74">
+      <Diagram DiagramId="11d2c2d78f5a433895843e52e12e5395" Name="Diagram1">
         <EntityTypeShape EntityType="LabPasteleriaModel.Cliente" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.DetallePedido" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.Pedido" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabPasteleriaModel.Producto" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabPasteleriaModel.Proveedor" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabPasteleriaModel.Producto" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabPasteleriaModel.Proveedor" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.Usuario" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
-        <AssociationConnector Association="LabPasteleriaModel.FK__Pedido__idClient__3E52440B" ManuallyRouted="false" />
-        <AssociationConnector Association="LabPasteleriaModel.FK__DetallePe__idPed__4222D4EF" ManuallyRouted="false" />
-        <AssociationConnector Association="LabPasteleriaModel.FK__DetallePe__idPro__4316F928" ManuallyRouted="false" />
-        <AssociationConnector Association="LabPasteleriaModel.FK__Pedido__idUsuari__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="LabPasteleriaModel.fK_Pedido_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="LabPasteleriaModel.fK_DetallePedido_Pedido" ManuallyRouted="false" />
+        <AssociationConnector Association="LabPasteleriaModel.fK_DetallePedido_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="LabPasteleriaModel.fK_Pedido_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="LabPasteleriaModel.fK_Producto_Proveedor" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
