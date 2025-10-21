@@ -22,3 +22,15 @@ C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\si
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CadPasteleria\obj\Debug\CadPaste.1275FF04.Up2Date
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.dll
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\CadPasteleria.dll.config
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\CadPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\CadPasteleria.pdb
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\EntityFramework.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\EntityFramework.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.csproj.AssemblyReference.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.csproj.CoreCompileInputs.cache
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\obj\Debug\CadPaste.1275FF04.Up2Date
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.dll
+C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CadPasteleria\obj\Debug\CadPasteleria.pdb

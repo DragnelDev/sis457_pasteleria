@@ -12,6 +12,8 @@ namespace CadPasteleria
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class LabPasteleriaEntities1 : DbContext
     {
@@ -31,5 +33,14 @@ namespace CadPasteleria
         public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Proveedor> Proveedor { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+    
+        public virtual ObjectResult<paListarProductos_Result> paListarProductos(string tipoProducto)
+        {
+            var tipoProductoParameter = tipoProducto != null ?
+                new ObjectParameter("TipoProducto", tipoProducto) :
+                new ObjectParameter("TipoProducto", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paListarProductos_Result>("paListarProductos", tipoProductoParameter);
+        }
     }
 }
