@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmproductos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmproductos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmautenticacion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmautenticacion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|c:\\users\\nam\\documents\\informatica\\fundamentos de la programacion\\laboratorio\\sis457_pasteleria\\sis457pasteleria\\cppasteleria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0983B58-E208-4B1C-A07A-80FC10874576}|CpPasteleria\\CpPasteleria.csproj|solutionrelative:cppasteleria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmProductos.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.Designer.cs",
-              "RelativeDocumentMoniker": "CpPasteleria\\FrmProductos.Designer.cs",
-              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.Designer.cs",
-              "RelativeToolTip": "CpPasteleria\\FrmProductos.Designer.cs",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAlwE4BAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FrmAutenticacion.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.Designer.cs",
+              "RelativeDocumentMoniker": "CpPasteleria\\FrmAutenticacion.Designer.cs",
+              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.Designer.cs",
+              "RelativeToolTip": "CpPasteleria\\FrmAutenticacion.Designer.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAlwIkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T21:21:46.818Z",
+              "WhenOpened": "2025-10-20T22:16:51.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmProductos.cs",
-              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.cs",
-              "RelativeDocumentMoniker": "CpPasteleria\\FrmProductos.cs",
-              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.cs",
-              "RelativeToolTip": "CpPasteleria\\FrmProductos.cs",
+              "DocumentIndex": 3,
+              "Title": "FrmAutenticacion.cs",
+              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.cs",
+              "RelativeDocumentMoniker": "CpPasteleria\\FrmAutenticacion.cs",
+              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.cs",
+              "RelativeToolTip": "CpPasteleria\\FrmAutenticacion.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAlwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T21:21:31.164Z",
+              "WhenOpened": "2025-10-20T22:16:41.326Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "CpPasteleria\\FrmProducto.cs",
+              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpPasteleria\\FrmProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T22:09:36.042Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.cs",
-              "RelativeDocumentMoniker": "CpPasteleria\\FrmProductos.cs",
-              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpPasteleria\\FrmProductos.cs [Dise\u00F1o]",
+              "Title": "FrmAutenticacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.cs",
+              "RelativeDocumentMoniker": "CpPasteleria\\FrmAutenticacion.cs",
+              "ToolTip": "C:\\Users\\Nam\\Documents\\Informatica\\Fundamentos de la programacion\\Laboratorio\\sis457_pasteleria\\Sis457Pasteleria\\CpPasteleria\\FrmAutenticacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpPasteleria\\FrmAutenticacion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:38:17.173Z",
+              "WhenOpened": "2025-10-20T22:08:20.457Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
