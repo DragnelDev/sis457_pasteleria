@@ -148,7 +148,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="LabPasteleriaEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LabPasteleriaEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Cliente" EntityType="Self.Cliente" />
     <EntitySet Name="DetallePedido" EntityType="Self.DetallePedido" />
     <EntitySet Name="Pedido" EntityType="Self.Pedido" />

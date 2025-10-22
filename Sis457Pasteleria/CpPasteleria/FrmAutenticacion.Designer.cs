@@ -83,6 +83,7 @@
             // 
             this.txtClave.Location = new System.Drawing.Point(98, 88);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(146, 20);
             this.txtClave.TabIndex = 9;
             // 
@@ -121,6 +122,7 @@
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // FrmAutenticacion
             // 

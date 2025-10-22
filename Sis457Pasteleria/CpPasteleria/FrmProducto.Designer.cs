@@ -32,8 +32,8 @@
             this.lblProductos = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.gbxProductos = new System.Windows.Forms.GroupBox();
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.gbxLista = new System.Windows.Forms.GroupBox();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.cbxProveedor = new System.Windows.Forms.ComboBox();
             this.cbxTipoProducto = new System.Windows.Forms.ComboBox();
@@ -53,8 +53,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.gbxProductos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            this.gbxLista.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             this.pnlCRUD.SuspendLayout();
@@ -63,9 +63,9 @@
             // lblProductos
             // 
             this.lblProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductos.Location = new System.Drawing.Point(-1, 3);
+            this.lblProductos.Location = new System.Drawing.Point(-1, -5);
             this.lblProductos.Name = "lblProductos";
-            this.lblProductos.Size = new System.Drawing.Size(664, 19);
+            this.lblProductos.Size = new System.Drawing.Size(664, 28);
             this.lblProductos.TabIndex = 1;
             this.lblProductos.Text = "Catalogo de Productos";
             this.lblProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,26 +88,28 @@
             this.lblBuscar.Text = "Buscar por Nombre, Tipo de Producto o Descripcion:";
             this.lblBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gbxProductos
+            // gbxLista
             // 
-            this.gbxProductos.Controls.Add(this.dgvProductos);
-            this.gbxProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxProductos.Location = new System.Drawing.Point(15, 64);
-            this.gbxProductos.Name = "gbxProductos";
-            this.gbxProductos.Size = new System.Drawing.Size(639, 137);
-            this.gbxProductos.TabIndex = 4;
-            this.gbxProductos.TabStop = false;
-            this.gbxProductos.Text = "Lista de Productos";
+            this.gbxLista.Controls.Add(this.dgvLista);
+            this.gbxLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxLista.Location = new System.Drawing.Point(15, 64);
+            this.gbxLista.Name = "gbxLista";
+            this.gbxLista.Size = new System.Drawing.Size(639, 137);
+            this.gbxLista.TabIndex = 4;
+            this.gbxLista.TabStop = false;
+            this.gbxLista.Text = "Lista de Productos";
             // 
-            // dgvProductos
+            // dgvLista
             // 
-            this.dgvProductos.AllowUserToResizeRows = false;
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(7, 22);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.ReadOnly = true;
-            this.dgvProductos.Size = new System.Drawing.Size(626, 109);
-            this.dgvProductos.TabIndex = 0;
+            this.dgvLista.AllowUserToAddRows = false;
+            this.dgvLista.AllowUserToDeleteRows = false;
+            this.dgvLista.AllowUserToResizeRows = false;
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Location = new System.Drawing.Point(7, 22);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
+            this.dgvLista.Size = new System.Drawing.Size(626, 109);
+            this.dgvLista.TabIndex = 0;
             // 
             // gbxDatos
             // 
@@ -242,6 +244,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -255,6 +258,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // pnlCRUD
             // 
@@ -279,6 +283,7 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnCerrar
             // 
@@ -292,6 +297,7 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEditar
             // 
@@ -305,6 +311,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -318,6 +325,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnBuscar
             // 
@@ -331,6 +339,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FrmProducto
             // 
@@ -340,7 +349,7 @@
             this.ClientSize = new System.Drawing.Size(666, 391);
             this.Controls.Add(this.pnlCRUD);
             this.Controls.Add(this.gbxDatos);
-            this.Controls.Add(this.gbxProductos);
+            this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblProductos);
@@ -348,8 +357,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProducto";
             this.Text = "::: Productos - Pasteleria :::";
-            this.gbxProductos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            this.Load += new System.EventHandler(this.FrmProducto_Load);
+            this.gbxLista.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
@@ -365,10 +375,10 @@
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label lblBuscar;
-        private System.Windows.Forms.GroupBox gbxProductos;
+        private System.Windows.Forms.GroupBox gbxLista;
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Panel pnlCRUD;
-        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEditar;

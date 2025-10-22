@@ -15,10 +15,10 @@ namespace CadPasteleria
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class LabPasteleriaEntities1 : DbContext
+    public partial class LabPasteleriaEntities : DbContext
     {
-        public LabPasteleriaEntities1()
-            : base("name=LabPasteleriaEntities1")
+        public LabPasteleriaEntities()
+            : base("name=LabPasteleriaEntities")
         {
         }
     
