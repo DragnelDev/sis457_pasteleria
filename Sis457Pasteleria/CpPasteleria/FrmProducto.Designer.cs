@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProducto));
             this.lblProductos = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -53,11 +54,21 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.erpNombreProducto = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTipoProducto = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpProveedor = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             this.pnlCRUD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombreProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipoProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProductos
@@ -341,6 +352,26 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // erpNombreProducto
+            // 
+            this.erpNombreProducto.ContainerControl = this;
+            // 
+            // erpPrecio
+            // 
+            this.erpPrecio.ContainerControl = this;
+            // 
+            // erpTipoProducto
+            // 
+            this.erpTipoProducto.ContainerControl = this;
+            // 
+            // erpProveedor
+            // 
+            this.erpProveedor.ContainerControl = this;
+            // 
+            // erpDescripcion
+            // 
+            this.erpDescripcion.ContainerControl = this;
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,6 +395,11 @@
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
             this.pnlCRUD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombreProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipoProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,6 +431,11 @@
         private System.Windows.Forms.NumericUpDown nudPrecio;
         private System.Windows.Forms.ComboBox cbxProveedor;
         private System.Windows.Forms.ComboBox cbxTipoProducto;
+        private System.Windows.Forms.ErrorProvider erpNombreProducto;
+        private System.Windows.Forms.ErrorProvider erpPrecio;
+        private System.Windows.Forms.ErrorProvider erpTipoProducto;
+        private System.Windows.Forms.ErrorProvider erpProveedor;
+        private System.Windows.Forms.ErrorProvider erpDescripcion;
     }
 }
 

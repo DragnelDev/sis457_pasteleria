@@ -115,6 +115,9 @@ INSERT INTO Usuario (nombreUsuario, clave, rol) VALUES
 ('vendedor1', 'vendedor123', 'Vendedor'),
 ('vendedor2', 'vendedor123', 'Vendedor');
 
+INSERT INTO Usuario (nombreUsuario, clave, rol) VALUES 
+('jperez', 'I0HCOO/NSSY6WOS9POP5XW==', 'Administrador'); -- Clave: hola123
+
 -- Insertar datos iniciales en la tabla Cliente
 INSERT INTO Cliente (nombreCliente, apellidoCliente, telefonoCliente, emailCliente, direccionCliente) VALUES 
 ('Juan', 'Perez', '555-1234', 'juan@gmail.com', 'Calle Falsa 123'),

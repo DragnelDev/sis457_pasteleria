@@ -51,7 +51,7 @@ namespace CpPasteleria
                     txtUsuario.Focus();
                     txtUsuario.SelectAll();
                     Hide();
-                    new FrmProducto(this).ShowDialog();
+                    new FrmPrincipal(this).ShowDialog();
                 }
                 else
                 {
@@ -61,5 +61,14 @@ namespace CpPasteleria
             }
         }
 
+        private void txtClave_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) btnIngresar.PerformClick();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

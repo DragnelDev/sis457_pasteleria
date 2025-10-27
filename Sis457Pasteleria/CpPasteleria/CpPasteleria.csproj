@@ -36,8 +36,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.C1Pdf.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.C1Report.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=594a0605db190bb9" />
+    <Reference Include="C1.C1Zip.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Data.Entity.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=64e78d493ac08671" />
+    <Reference Include="C1.LiveLinq.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=28cd8b3517c57673" />
+    <Reference Include="C1.Win.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
     <Reference Include="C1.Win.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.BarCode.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.C1Document.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1DX.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1Report.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=41780e2fc605e636" />
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1Ribbon.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1RibbonPreview.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SplitContainer.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.Data.Entity.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=4e8cc5aec211257b, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.ImportServices.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -58,6 +74,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FrmAjusteInventario.cs">

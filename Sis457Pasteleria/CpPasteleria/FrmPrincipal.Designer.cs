@@ -28,21 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
+            this.btnProductos = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.Location = new System.Drawing.Point(253, 134);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(75, 23);
+            this.btnProductos.TabIndex = 0;
+            this.btnProductos.Text = "button1";
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ClientSize = new System.Drawing.Size(718, 410);
+            this.Controls.Add(this.btnProductos);
             this.Name = "FrmPrincipal";
-            this.Text = "::: Menú Principal - Pasteleria :::";
+            this.Text = "FrmPrincipal";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnProductos;
     }
 }
