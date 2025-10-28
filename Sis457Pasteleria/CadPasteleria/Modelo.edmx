@@ -66,6 +66,7 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="nombre" Type="varchar" MaxLength="150" Nullable="false" />
           <Property Name="precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="tipo" Type="varchar" MaxLength="50" />
@@ -146,6 +147,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="paListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="parametro" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="paListarEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="parametro" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="paListarProductos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="parametro" Type="varchar" Mode="In" />
         </Function>
@@ -250,6 +257,7 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -360,12 +368,44 @@
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Pedido" EntitySet="Pedido" />
           </AssociationSet>
+          <FunctionImport Name="paListarCliente" ReturnType="Collection(LabPasteleriaModel.paListarCliente_Result)">
+            <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paListarEmpleados" ReturnType="Collection(LabPasteleriaModel.paListarEmpleados_Result)">
+            <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
           <FunctionImport Name="paListarProductos" ReturnType="Collection(LabPasteleriaModel.paListarProductos_Result)">
             <Parameter Name="parametro" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
+        <ComplexType Name="paListarCliente_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="apellido" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="direccion" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="paListarEmpleados_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="12" />
+          <Property Type="String" Name="nombres" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="apellidoPaterno" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="apellidoMaterno" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaNacimiento" Nullable="false" />
+          <Property Type="String" Name="direccion" Nullable="false" MaxLength="250" />
+          <Property Type="Int64" Name="celular" Nullable="false" />
+          <Property Type="String" Name="cargo" Nullable="false" MaxLength="50" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+        </ComplexType>
         <ComplexType Name="paListarProductos_Result">
           <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="codigo" Nullable="false" MaxLength="20" />
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="150" />
           <Property Type="Decimal" Name="precio" Nullable="false" Precision="10" Scale="2" />
           <Property Type="String" Name="tipo" Nullable="true" MaxLength="50" />
@@ -444,6 +484,7 @@
             <EntityTypeMapping TypeName="LabPasteleriaModel.Producto">
               <MappingFragment StoreEntitySet="Producto">
                 <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="precio" ColumnName="precio" />
                 <ScalarProperty Name="tipo" ColumnName="tipo" />
@@ -467,10 +508,44 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="paListarCliente" FunctionName="LabPasteleriaModel.Store.paListarCliente">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LabPasteleriaModel.paListarCliente_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="paListarEmpleados" FunctionName="LabPasteleriaModel.Store.paListarEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LabPasteleriaModel.paListarEmpleados_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+                <ScalarProperty Name="nombres" ColumnName="nombres" />
+                <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+                <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="celular" ColumnName="celular" />
+                <ScalarProperty Name="cargo" ColumnName="cargo" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="paListarProductos" FunctionName="LabPasteleriaModel.Store.paListarProductos">
             <ResultMapping>
               <ComplexTypeMapping TypeName="LabPasteleriaModel.paListarProductos_Result">
                 <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="precio" ColumnName="precio" />
                 <ScalarProperty Name="tipo" ColumnName="tipo" />

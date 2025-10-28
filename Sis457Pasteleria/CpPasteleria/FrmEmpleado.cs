@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CpPasteleria
 {
-    public partial class FrmAjusteInventario : Form
+    public partial class FrmEmpleado : Form
     {
-        public FrmAjusteInventario()
+        public FrmEmpleado()
         {
             InitializeComponent();
         }

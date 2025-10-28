@@ -11,14 +11,17 @@ namespace CadPasteleria
 {
     using System;
     
-    public partial class paListarProductos_Result
+    public partial class paListarEmpleados_Result
     {
         public int id { get; set; }
-        public string codigo { get; set; }
-        public string nombre { get; set; }
-        public decimal precio { get; set; }
-        public string tipo { get; set; }
-        public string descripcion { get; set; }
+        public string cedulaIdentidad { get; set; }
+        public string nombres { get; set; }
+        public string apellidoPaterno { get; set; }
+        public string apellidoMaterno { get; set; }
+        public System.DateTime fechaNacimiento { get; set; }
+        public string direccion { get; set; }
+        public long celular { get; set; }
+        public string cargo { get; set; }
         public short estado { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }

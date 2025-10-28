@@ -67,7 +67,6 @@ C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\si
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmCliente.resources
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmPedido.resources
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmProducto.resources
-C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmProveedor.resources
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmReporteVentas.resources
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.FrmUsuario.resources
 C:\Users\Nam\Documents\Informatica\Fundamentos de la programacion\Laboratorio\sis457_pasteleria\Sis457Pasteleria\CpPasteleria\obj\Debug\CpPasteleria.exe.config

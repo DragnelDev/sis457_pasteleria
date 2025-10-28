@@ -77,6 +77,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Modelo.edmx</DependentUpon>
     </Compile>
+    <Compile Include="paListarCliente_Result.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paListarEmpleados_Result.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="paListarProductos_Result.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>

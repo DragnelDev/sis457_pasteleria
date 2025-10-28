@@ -65,6 +65,7 @@ CREATE TABLE Proveedor (
 
 CREATE TABLE Producto (
     id INT PRIMARY KEY IDENTITY(1,1),
+    codigo VARCHAR(20) NOT NULL,
     nombre VARCHAR(150) NOT NULL UNIQUE,
     precio DECIMAL(10, 2) NOT NULL,
     tipo VARCHAR(50) NULL,
@@ -148,10 +149,10 @@ INSERT INTO Cliente (nombre, apellido, telefono, email, direccion) VALUES
 ('Harinas y Mas', '555-8765', 'harina@gmail.com', 'Avenida Harina 654'),
 ('Frutas Frescas', '555-3456', 'frutas@gmail.com', 'Boulevard Fruta 987');*/
 
-INSERT INTO Producto (nombre, precio, tipo, descripcion) VALUES 
-('Pastel de Chocolate', 20.00, 'Pastel', 'Delicioso pastel de chocolate con cobertura de ganache.'),
-('Cupcake de Vainilla', 3.00, 'Cupcake', 'Suave cupcake de vainilla con glaseado de crema.'),
-('Galletas de Avena', 1.50, 'Galleta', 'Crujientes galletas de avena con pasas.');
+INSERT INTO Producto (codigo, nombre, precio, tipo, descripcion) VALUES 
+('PAS001', 'Pastel de Chocolate', 20.00, 'Pastel', 'Delicioso pastel de chocolate con cobertura de ganache.'),
+('CUP001', 'Cupcake de Vainilla', 3.00, 'Cupcake', 'Suave cupcake de vainilla con glaseado de crema.'),
+('GAl001', 'Galletas de Avena', 1.50, 'Galleta', 'Crujientes galletas de avena con pasas.');
 
 INSERT INTO Pedido (fechaEntrega, total, idCliente, idUsuario) VALUES 
 ('2024-10-01', 50.00, 1, 1),
@@ -159,9 +160,9 @@ INSERT INTO Pedido (fechaEntrega, total, idCliente, idUsuario) VALUES
 ('2024-10-03', 20.00, 3, 1);
 
 INSERT INTO DetallePedido (cantidad, idPedido, idProducto) VALUES 
-(2, 4, 1), -- 2 Pasteles de Chocolate en el Pedido 1
-(5, 5, 2), -- 5 Cupcakes de Vainilla en el Pedido 1
-(1, 3, 1); -- 1 Galletas de Avena en el Pedido 2
+(2, 1, 1), -- 2 Pasteles de Chocolate en el Pedido 1
+(5, 2, 2), -- 5 Cupcakes de Vainilla en el Pedido 1
+(1, 3, 3); -- 1 Galletas de Avena en el Pedido 2
 
 GO
 -- Verificar los datos insertados
@@ -183,6 +184,7 @@ CREATE PROC paListarProductos @parametro VARCHAR(50)
 AS
     SELECT
         P.id,
+        p.codigo,
         P.nombre,
         P.precio,
         P.tipo,
@@ -197,4 +199,136 @@ AS
 
 -- Ejecutar el procedimiento almacenado
 EXEC paListarProductos 'Pastel';
+
+GO
+DROP PROC IF EXISTS paListarEmpleados;
+GO
+CREATE PROC paListarEmpleados @parametro VARCHAR(50)
+AS
+  SELECT E.id,
+         E.cedulaIdentidad,
+         E.nombres,
+         E.apellidoPaterno,
+         E.apellidoMaterno,
+         E.fechaNacimiento,
+         E.direccion,
+         E.celular,
+         E.cargo,
+         E.estado,
+         E.usuarioRegistro,
+         E.fechaRegistro
+   FROM Empleado E
+   WHERE E.estado = 1 -- Solo empleados Activos
+         AND (E.nombres + ' ' + E.apellidoPaterno + ' ' +
+         E.apellidoMaterno LIKE '%' + @parametro + '%'
+              OR E.cedulaIdentidad LIKE '%' + @parametro + '%')
+              ORDER BY E.apellidoPaterno ASC;
+
+
+-- Ejecutar el procedimiento almacenado
+EXEC paListarEmpleados '';
+
+GO
+DROP PROC IF EXISTS paListarCliente;
+GO
+
+-- Listar Clientes Activos con Búsqueda
+CREATE PROC paListarCliente @parametro VARCHAR(255)
+AS
+    SELECT
+        id,
+        nombre,
+        apellido,
+        telefono,
+        email,
+        direccion,
+        usuarioRegistro,
+        fechaRegistro,
+        estado
+    FROM Cliente
+    WHERE estado = 1
+    AND (
+        nombre + ' ' + apellido LIKE '%' + @parametro + '%' OR
+        email LIKE '%' + @parametro + '%'
+    )
+    ORDER BY apellido ASC;
+
+    EXEC paListarCliente 'Juan';
+    GO
+
+/*
+-- Obtener un Cliente por ID
+CREATE PROC paClienteObtener @idCliente INT
+AS
+    SELECT *
+    FROM Cliente
+    WHERE id = @idCliente;
+
+    EXEC paClienteObtener 1;
+    GO*/
+
+
+    DROP PROC IF EXISTS paPedidoListar;
+    GO
+-- Listar Pedidos entre dos fechas
+CREATE PROC paPedidoListar @fechaInicio DATE, @fechaFin DATE
+AS
+    SELECT
+        PE.id AS IdPedido,
+        PE.fechaEntrega,
+        PE.total,
+        C.nombre + ' ' + C.apellido AS NombreCliente,
+        E.nombres + ' ' + ISNULL(E.apellidoPaterno, '') + ' ' + ISNULL(E.apellidoMaterno, '') AS EmpleadoVenta, 
+        PE.estado,
+        PE.fechaRegistro
+    FROM Pedido PE
+    INNER JOIN Cliente C ON C.id = PE.idCliente
+    INNER JOIN Usuario U ON U.id = PE.idUsuario
+    INNER JOIN Empleado E ON E.id = U.idEmpleado
+    WHERE PE.estado = 1
+    AND PE.fechaRegistro BETWEEN @fechaInicio AND @fechaFin 
+    ORDER BY PE.fechaRegistro DESC;
+
+-- Ejecutar el procedimiento almacenado
+EXEC paPedidoListar '2024-01-01', '2024-12-31';
+GO
+
+
+/*DROP PROC IF EXISTS paPedidoDetalleObtener;
+GO
+-- Obtener Detalle de un Pedido por ID
+CREATE PROC paPedidoDetalleObtener @idPedido INT
+AS
+    SELECT
+        DP.cantidad,
+        P.nombre AS NombreProducto,
+        P.precio, 
+        (DP.cantidad * P.precio) AS SubTotal
+    FROM DetallePedido DP
+    INNER JOIN Producto P ON P.id = DP.idProducto
+    WHERE DP.idPedido = @idPedido
+    AND DP.estado = 1;
+-- Ejecutar el procedimiento almacenado
+EXEC paPedidoDetalleObtener 1;
+GO*/
+
+/*-- Consulta para ver quién creó qué usuario
+CREATE VIEW vwUsuariosCreacion AS
+SELECT
+    usuario,
+    rol,
+    usuarioRegistro AS CreadoPor,
+    fechaRegistro AS FechaCreacion,
+    CASE estado
+        WHEN 1 THEN 'Activo'
+        WHEN 0 THEN 'Inactivo'
+        WHEN -1 THEN 'Eliminado'
+    END AS Estado
+FROM Usuario
+ORDER BY fechaRegistro DESC;
+GO
+-- Ver los datos de la vista
+SELECT * FROM vwUsuariosCreacion;*/
+
+
 	

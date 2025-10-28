@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9c71d86db75741f48945ea1725e3555f" Name="Diagram1">
+      <Diagram DiagramId="1fa8422a8aed4de3a7a20bced85f1c67" Name="Diagram1">
         <EntityTypeShape EntityType="LabPasteleriaModel.Cliente" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.DetallePedido" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.Empleado" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.Pedido" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabPasteleriaModel.Producto" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabPasteleriaModel.Producto" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LabPasteleriaModel.Usuario" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="LabPasteleriaModel.fK_Pedido_Cliente" ManuallyRouted="false" />
         <AssociationConnector Association="LabPasteleriaModel.fK_DetallePedido_Pedido" ManuallyRouted="false" />
