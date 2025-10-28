@@ -13,9 +13,13 @@ namespace CadPasteleria
     
     public partial class paListarProductos_Result
     {
-        public string Producto { get; set; }
-        public string TipoProducto { get; set; }
-        public Nullable<int> TotalUnidadesVendidas { get; set; }
-        public Nullable<decimal> IngresoTotalGenerado { get; set; }
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public decimal precio { get; set; }
+        public string tipo { get; set; }
+        public string descripcion { get; set; }
+        public short estado { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
     }
 }

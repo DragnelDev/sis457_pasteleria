@@ -5,11 +5,11 @@
       <EntityTypeMapping TypeName="LabPasteleriaModel.Cliente">
         <MappingFragment StoreEntitySet="Cliente">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
-          <ScalarProperty Name="apellidoCliente" ColumnName="apellidoCliente" />
-          <ScalarProperty Name="telefonoCliente" ColumnName="telefonoCliente" />
-          <ScalarProperty Name="emailCliente" ColumnName="emailCliente" />
-          <ScalarProperty Name="direccionCliente" ColumnName="direccionCliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
@@ -23,6 +23,24 @@
           <ScalarProperty Name="cantidad" ColumnName="cantidad" />
           <ScalarProperty Name="idPedido" ColumnName="idPedido" />
           <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="LabPasteleriaModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
@@ -48,24 +66,9 @@
         <MappingFragment StoreEntitySet="Producto">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="precioProducto" ColumnName="precioProducto" />
-          <ScalarProperty Name="tipoProducto" ColumnName="tipoProducto" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Proveedor">
-      <EntityTypeMapping TypeName="LabPasteleriaModel.Proveedor">
-        <MappingFragment StoreEntitySet="Proveedor">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombreProveedor" ColumnName="nombreProveedor" />
-          <ScalarProperty Name="telefonoProveedor" ColumnName="telefonoProveedor" />
-          <ScalarProperty Name="emailProveedor" ColumnName="emailProveedor" />
-          <ScalarProperty Name="direccionProveedor" ColumnName="direccionProveedor" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
@@ -76,9 +79,9 @@
       <EntityTypeMapping TypeName="LabPasteleriaModel.Usuario">
         <MappingFragment StoreEntitySet="Usuario">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
           <ScalarProperty Name="clave" ColumnName="clave" />
-          <ScalarProperty Name="rol" ColumnName="rol" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
@@ -88,10 +91,14 @@
     <FunctionImportMapping FunctionImportName="paListarProductos" FunctionName="LabPasteleriaModel.Store.paListarProductos">
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabPasteleriaModel.paListarProductos_Result">
-          <ScalarProperty Name="Producto" ColumnName="Producto" />
-          <ScalarProperty Name="TipoProducto" ColumnName="TipoProducto" />
-          <ScalarProperty Name="TotalUnidadesVendidas" ColumnName="TotalUnidadesVendidas" />
-          <ScalarProperty Name="IngresoTotalGenerado" ColumnName="IngresoTotalGenerado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

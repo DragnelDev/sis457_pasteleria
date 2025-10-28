@@ -23,14 +23,17 @@ namespace CpPasteleria
         {
             var lista = ProductoCln.listarPa(txtBuscar.Text.Trim());
             dgvLista.DataSource = lista;
-            dgvLista.Columns["Producto"].HeaderText = "Producto";
-            dgvLista.Columns["TipoProducto"].HeaderText = "Tipo de Producto ";
-            dgvLista.Columns["TotalUnidadesVendidas"].HeaderText = "Total de Unidades Vendidas";
-            dgvLista.Columns["IngresoTotalGenerado"].HeaderText = "Ingreso Total Generado";
-/*
-            if (lista.Count > 0) dgvProductos.CurrentCell = dgvProductos.Rows[0].Cells["id"];
-            btnEditar.Enabled = lista.Count > 0;
-            btnEliminar.Enabled = lista.Count > 0;*/
+            dgvLista.Columns["id"].Visible = false;
+            dgvLista.Columns["nombre"].HeaderText = "Nombre";
+            dgvLista.Columns["precio"].HeaderText = "Precio";
+            dgvLista.Columns["tipo"].HeaderText = "Tipo";            dgvLista.Columns["descripcion"].HeaderText = "Descripción";
+            dgvLista.Columns["estado"].Visible = false;
+            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            /*
+                        if (lista.Count > 0) dgvProductos.CurrentCell = dgvProductos.Rows[0].Cells["id"];
+                        btnEditar.Enabled = lista.Count > 0;
+                        btnEliminar.Enabled = lista.Count > 0;*/
         }
 
         private void FrmProducto_Load(object sender, EventArgs e)

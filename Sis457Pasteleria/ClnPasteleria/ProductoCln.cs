@@ -24,10 +24,9 @@ namespace ClnPasteleria
             using (var context = new LabPasteleriaEntities())
             {
                 var existe = context.Producto.Find(producto.id);
-                existe.idProveedor = producto.idProveedor;
                 existe.nombre = producto.nombre;
-                existe.precioProducto = producto.precioProducto;
-                existe.tipoProducto = producto.tipoProducto;
+                existe.precio = producto.precio;
+                existe.tipo = producto.tipo;
                 existe.descripcion = producto.descripcion;
                 existe.usuarioRegistro = producto.usuarioRegistro;
                 return context.SaveChanges();

@@ -29,18 +29,18 @@ namespace CadPasteleria
     
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<DetallePedido> DetallePedido { get; set; }
+        public virtual DbSet<Empleado> Empleado { get; set; }
         public virtual DbSet<Pedido> Pedido { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
-        public virtual DbSet<Proveedor> Proveedor { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
     
-        public virtual ObjectResult<paListarProductos_Result> paListarProductos(string tipoProducto)
+        public virtual ObjectResult<paListarProductos_Result> paListarProductos(string parametro)
         {
-            var tipoProductoParameter = tipoProducto != null ?
-                new ObjectParameter("TipoProducto", tipoProducto) :
-                new ObjectParameter("TipoProducto", typeof(string));
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paListarProductos_Result>("paListarProductos", tipoProductoParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paListarProductos_Result>("paListarProductos", parametroParameter);
         }
     }
 }

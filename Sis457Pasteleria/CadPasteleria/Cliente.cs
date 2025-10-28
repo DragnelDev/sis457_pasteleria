@@ -21,11 +21,11 @@ namespace CadPasteleria
         }
     
         public int id { get; set; }
-        public string nombreCliente { get; set; }
-        public string apellidoCliente { get; set; }
-        public string telefonoCliente { get; set; }
-        public string emailCliente { get; set; }
-        public string direccionCliente { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string telefono { get; set; }
+        public string email { get; set; }
+        public string direccion { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }

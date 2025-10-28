@@ -5,11 +5,11 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombreCliente" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="apellidoCliente" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="telefonoCliente" Type="varchar" MaxLength="20" />
-    <Property Name="emailCliente" Type="varchar" MaxLength="100" />
-    <Property Name="direccionCliente" Type="varchar" MaxLength="255" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="direccion" Type="varchar" MaxLength="255" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
@@ -22,6 +22,23 @@
     <Property Name="cantidad" Type="int" Nullable="false" />
     <Property Name="idPedido" Type="int" Nullable="false" />
     <Property Name="idProducto" Type="int" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cedulaIdentidad" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="nombres" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="varchar" MaxLength="50" />
+    <Property Name="apellidoMaterno" Type="varchar" MaxLength="50" />
+    <Property Name="fechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="direccion" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="celular" Type="bigint" Nullable="false" />
+    <Property Name="cargo" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
@@ -45,23 +62,9 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="150" Nullable="false" />
-    <Property Name="precioProducto" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="tipoProducto" Type="varchar" MaxLength="50" />
+    <Property Name="precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="50" />
     <Property Name="descripcion" Type="varchar(max)" />
-    <Property Name="idProveedor" Type="int" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
-    <Property Name="estado" Type="smallint" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Proveedor">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombreProveedor" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="telefonoProveedor" Type="varchar" MaxLength="20" />
-    <Property Name="emailProveedor" Type="varchar" MaxLength="100" />
-    <Property Name="direccionProveedor" Type="varchar" MaxLength="255" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
@@ -71,9 +74,9 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="clave" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="rol" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idEmpleado" Type="int" Nullable="false" />
+    <Property Name="usuario" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="clave" Type="varchar" MaxLength="250" Nullable="false" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
@@ -126,27 +129,27 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fK_Producto_Proveedor">
-    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
-    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+  <Association Name="fk_Usuario_Empleado">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Proveedor">
+      <Principal Role="Empleado">
         <PropertyRef Name="id" />
       </Principal>
-      <Dependent Role="Producto">
-        <PropertyRef Name="idProveedor" />
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idEmpleado" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Function Name="paListarProductos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="TipoProducto" Type="varchar" Mode="In" />
+    <Parameter Name="parametro" Type="varchar" Mode="In" />
   </Function>
   <EntityContainer Name="LabPasteleriaModelStoreContainer">
     <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DetallePedido" EntityType="Self.DetallePedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Pedido" EntityType="Self.Pedido" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="fK_DetallePedido_Pedido" Association="Self.fK_DetallePedido_Pedido">
       <End Role="Pedido" EntitySet="Pedido" />
@@ -164,9 +167,9 @@
       <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Pedido" EntitySet="Pedido" />
     </AssociationSet>
-    <AssociationSet Name="fK_Producto_Proveedor" Association="Self.fK_Producto_Proveedor">
-      <End Role="Proveedor" EntitySet="Proveedor" />
-      <End Role="Producto" EntitySet="Producto" />
+    <AssociationSet Name="fk_Usuario_Empleado" Association="Self.fk_Usuario_Empleado">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

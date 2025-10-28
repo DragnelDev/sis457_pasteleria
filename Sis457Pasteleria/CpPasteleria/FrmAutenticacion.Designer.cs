@@ -111,19 +111,22 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(168, 20);
             this.txtClave.TabIndex = 13;
+            this.txtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClave_KeyPress);
             // 
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnIngresar.Image = global::CpPasteleria.Properties.Resources.login_ok;
             this.btnIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIngresar.Location = new System.Drawing.Point(61, 127);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(100, 40);
-            this.btnIngresar.TabIndex = 14;
+            this.btnIngresar.TabIndex = 9;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnSalir
             // 
@@ -137,6 +140,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmAutenticacion
             // 

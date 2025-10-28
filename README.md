@@ -34,12 +34,12 @@ El modelo de datos se basa en las siguientes entidades clave:
 
 | Entidad | Propósito | Campos Clave (CRUD) | Eliminación Lógica | Observaciones |
 | :--- | :--- | :--- | :--- | :--- |
-| **Usuario** | Autenticación y Login al sistema. | `idUsuario`, `nombreUsuario`, `clave`, `rol` | **Sí** (`Estado`) | |
-| **Producto** | Catálogo de pastelería disponible para la venta. | `idProducto`, `nombre`, `precioUnitario`, `tipoProducto`, `descripcion` | **Sí** (`Estado`) | |
-| **Cliente** | Contactos para la gestión de pedidos. | `idCliente`, `nombreCompleto`, `telefono`, `email`, `direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
-| **Proveedor** | Entidades que suministran materia prima. | `idProveedor`, `nombre`, `telefono`, `email`, `direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
-| **Pedido** | Cabecera de la transacción de venta. | `idPedido`, `fechaEntrega`, `total`, `idCliente`, `idUsuario` | **No** | Registro Histórico. |
-| **DetallePedido** | Detalle de los productos incluidos en cada pedido. | `idDetallePedido`, `idPedido`, `idProducto`, `cantidad` | **No** | Detalle de Registro. |
+| **Empleado** | Registro de Empleados. | `id`, `cedulaIdentidad`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `fechaNacimiento`, `direccion`, `celular`, `cargo` | **Sí** (`Estado`) | |
+| **Usuario** | Autenticación y Login al sistema. | `id`, `idEmpleado`, `usuario`, `clave` | **Sí** (`Estado`) | |
+| **Cliente** | Contactos para la gestión de pedidos. | `id`, `nombre`, `apellido`, `telefono`, `email`, `direccion` | **Sí** (`Estado`) | **CRUD de Alta Prioridad.** |
+| **Producto** | Catálogo de pastelería disponible para la venta. | `id`, `nombre`, `precio`, `tipo`, `descripcion` | **Sí** (`Estado`) | |
+| **Pedido** | Cabecera de la transacción de venta. | `id`, `fechaEntrega`, `total`, `idCliente`, `idUsuario` | **No** | Registro Histórico. |
+| **DetallePedido** | Detalle de los productos incluidos en cada pedido. | `id`, `idPedido`, `idProducto`, `cantidad` | **No** | Detalle de Registro. |
 
 ---
 
@@ -50,8 +50,8 @@ Este es el plan de trabajo con las fechas límite para cada hito:
 | Hito | Fecha Límite | Tarea a Completar | Estado |
 | :--- | :--- | :--- | :--- |
 | **1** | **06/10/2025** | Creación de Repositorio y `README.md`. | ✔️ Completado |
-| **2** | **13/10/2025** | Implementación de la Capa de Acceso a Datos (CAD) y consolidación de la estructura de las entidades. | En progreso | Pendiente |
-| **3** | **20/10/2025** | Implementación de la Capa Lógica de Negocios (CLN) y diseño inicial de interfaces (Menú, Vistas de CRUD). | Pendiente |
+| **2** | **13/10/2025** | Implementación de la Capa de Acceso a Datos (CAD) y consolidación de la estructura de las entidades. | ✔️ Completado |
+| **3** | **20/10/2025** | Implementación de la Capa Lógica de Negocios (CLN) y diseño inicial de interfaces (Menú, Vistas de CRUD). | ✔️ Completado |
 | **4** | **27/10/2025** | CRUD completo de las entidades **Producto** y **Cliente**. Login funcional y Menú Principal implementados. | Pendiente |
 | **5** | **03/11/2025** | Funcionalidad de **Pedido/Venta** inicial. | Pendiente |
 | **6** | **10/11/2025** | Refinación y pruebas de la funcionalidad de **Pedido/Venta** y Documentación inicial del proyecto. | Pendiente |

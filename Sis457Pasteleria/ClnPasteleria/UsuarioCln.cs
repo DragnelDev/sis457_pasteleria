@@ -14,7 +14,7 @@ namespace ClnPasteleria
             using (var context = new LabPasteleriaEntities())
             {
                 return context.Usuario
-                    .Where(u => u.nombreUsuario == usuario && u.clave == clave)
+                    .Where(u => u.usuario1 == usuario && u.clave == clave)
                     .FirstOrDefault();
             }
         }
